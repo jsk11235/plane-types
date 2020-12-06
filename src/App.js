@@ -77,7 +77,7 @@ function App() {
           </div>
           <div>
             <Button onClick={async () => {
-              const newPreds = (await axios.post('http://localhost:5894/classify', {url: text})).data
+              const newPreds = (await axios.post('http://207.148.25.204:5894/classify', {url: text})).data
               setPreds(newPreds.pred)
               setText('')
               setImageUrl(text)
